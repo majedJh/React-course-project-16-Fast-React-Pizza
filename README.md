@@ -1,16 +1,72 @@
-# React + Vite
+# Fast React Pizza
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+It is a pizza app that allows the user to look into the menu, add pizzas to the cart, set an order, and track this order until it arrives.
 
-Currently, two official plugins are available:
+created: 17/12/2025
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Table of contents
 
-## React Compiler
+- [Overview](#overview)
+  - [Functionallity](#Functionallity)
+  - [Screenshot](#screenshots)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Overview
 
-## Expanding the ESLint configuration
+### Functionallity
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Users should be able to:
+
+- Enter his name for the order
+- Surf the menu for pizzas
+- Add pizzas to the cart with the quantity that he needs
+- Change the quantity from the cart or from the menu
+- Empty the card
+- Confirm the order by providing the phone number and the address
+- Choose to get his exact address fetched
+- Set his order as priority even after confirming the order
+- Search for his order so he can track its estimating time.
+
+### Screenshots
+
+![](./Project%20screenshots/Screenshot%202026-01-01%20181403.png)
+![](./Project%20screenshots/Screenshot%202026-01-01%20181415.png)
+![](./Project%20screenshots/Screenshot%202026-01-01%20181432.png)
+![](./Project%20screenshots/Screenshot%202026-01-01%20181507.png)
+![](./Project%20screenshots/Screenshot%202026-01-01%20181519.png)
+
+## My process
+
+### Built with
+
+- React
+- React Router
+- Redux toolkit
+- CSS Tailwind
+- Reverse Geocoding
+
+### What I learned
+
+- How to perfectly organize of the project using the redux toolkit (Store,slices and provider)
+- How to handle pages using non-componential browser router, applying the (actions/loaders) concept
+- Using the "Form" component provided by the react router to handle the submit order form, and validating the recived data provided by the user
+- Updating existing data using the useFetcher react hook
+- Applying a loader and an error handler to the whole project instead of a handler for each page/component
+- How to use CSS tailwind to styles the whole app and make reusable components
+
+### Continued development
+
+I'd like to implement more features, like saving the users to the database, creating a full functional users accounts system.
+
+### Useful resources
+
+- [Jonas Schmedtman](https://www.udemy.com/user/jonasschmedtmann)
+
+## Author
+
+- Github - https://github.com/majedJh/
